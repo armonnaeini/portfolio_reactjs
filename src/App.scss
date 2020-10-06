@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primary-col: #fff;
+$secondary-col: #EA2B1F;
+
+.App{
+  margin: 0 auto;
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        padding-right: 40px;
+      }
+    }
+  }
+
+  .home-section {
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+  }
+
+  .about-section {
+    background-color: lightcoral;
+    height: 100vh;
+  }
+
+  .work-section {
+    background-color: lightgreen;
+    height: 100vh;
+  }
+
+  .contact-section {
+    background-color: lightseagreen;
+    height: 100vh;
+  }
+
+}
