@@ -3,43 +3,52 @@
 $primary-col: #fff;
 $secondary-col: #EA2B1F;
 
-.App{
-  margin: 0 auto;
+html{
+  // scroll-snap-type: y proximity;
 
-  .nav-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-    ul {
-      list-style-type: none;
-      padding: 0;
-
-      li {
-        display: inline-block;
-        padding-right: 40px;
+  .App{
+    margin: 0 auto;
+  
+    .nav-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          display: inline-block;
+          padding-right: 40px;
+        }
       }
     }
+  
+    .home-section {
+      background-color: lightgoldenrodyellow;
+      height: 100vh;
+      width: 100%;
+      scroll-snap-align: center;
+    }
+  
+    .about-section {
+      background-color: lightcoral;
+      height: 100vh;
+      scroll-snap-align: center;
+    }
+  
+    .work-section {
+      background-color: lightgreen;
+      height: 100vh;
+      scroll-snap-align: center;
+    }
+  
+    .contact-section {
+      background-color: lightseagreen;
+      height: 100vh;
+      scroll-snap-align: center;
+    }
+  
   }
-
-  .home-section {
-    background-color: lightgoldenrodyellow;
-    height: 100vh;
-  }
-
-  .about-section {
-    background-color: lightcoral;
-    height: 100vh;
-  }
-
-  .work-section {
-    background-color: lightgreen;
-    height: 100vh;
-  }
-
-  .contact-section {
-    background-color: lightseagreen;
-    height: 100vh;
-  }
-
 }

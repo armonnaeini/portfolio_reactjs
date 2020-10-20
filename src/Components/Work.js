@@ -4,7 +4,7 @@ class Work extends Component {
     state = {};
     render() {
         return(
-            <div className = "work-section"></div>
+            <div className = "work-section" id = "work"></div>
         ); 
     }
 }

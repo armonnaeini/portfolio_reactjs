@@ -8,17 +8,37 @@ class NavBar extends Component {
             <div className = "nav-bar">
                 <ul>
                     <Link
-    activeClass="active"
-    to="section1"
-    spy={true}
-    smooth={true}
-    offset={-70}
-    duration={500}
-></Link>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                        activeClass="active"
+                        to="home-section"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >Home</Link>
+                   <Link
+                        activeClass="active"
+                        to="about-section"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >About</Link>
+                    <Link
+                        activeClass="active"
+                        to="work-section"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >Work</Link>
+                    <Link
+                        activeClass="active"
+                        to="contact-section"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >Contact</Link>
                 </ul>
             </div>
         );

@@ -13,11 +13,13 @@ import Contact from './Components/Contact';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Home />
-      <About />
-      <Work />
-      <Contact />
+      <div className = "container-scroll">
+        <NavBar />
+        <Home />
+        <About />
+        <Work />
+        <Contact />
+      </div>
     </div>
   );
 }
