@@ -26,19 +26,15 @@ html{
     }
     
     .home-wrapper{
-        /** HOME CONTAINER **/
-      background-color: blue;
 
       .home-section {
-        background-color: lightgoldenrodyellow;
         height: 100vh;
         width: 86%;
         display: flex;
         margin: 0 auto;
         
           .header-container {
-            background-color: red;
-            height: 100% !important;
+            height: 100%;
             float: left;
             width: 50%;
 
@@ -51,13 +47,11 @@ html{
             h1 {
               margin-bottom: 20px;
               max-width: 700px;
-              // margin-left: 70px;
             }
 
             h3 {
               font-size: 14px;
               margin-bottom: 10rem;
-              // margin-left: 70px;
             }
           }
 
@@ -77,7 +71,7 @@ html{
         z-index: 10;
         width: 86%;
         // top: 86%;
-        height: 88%;
+        height: 86%;
         position: absolute;
 
         @media screen and (min-height: 1000px) {
@@ -91,6 +85,41 @@ html{
     .about-section {
       background-color: lightcoral;
       height: 100vh;
+      width: 86%;
+      margin: 0 auto;
+
+      .about-wrapper {
+        width: 100%;
+        background-color: red;
+        height: 100%;
+        display: flex;
+
+        .title-container {
+          display: flex; 
+          flex-direction: column;
+          height: 100%;
+          width: 50%;
+          background-color: yellow;
+          justify-content: space-between;
+
+          .title-h {
+            height: 33%;
+          }
+        }
+
+        .blurb-container {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 50%;
+          background-color: green;
+          justify-content: space-between;
+
+          .blurb-p {
+            height: 33%;
+          }
+        }
+      }
     }
     
     /** WORK CONTAINER **/
