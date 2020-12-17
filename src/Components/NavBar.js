@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 class NavBar extends Component {
     state = {};

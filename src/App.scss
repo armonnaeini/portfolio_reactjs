@@ -4,8 +4,8 @@ $primary-col: #fff;
 $secondary-col: #EA2B1F;
 
 html{
-  // scroll-snap-type: y proximity;
   
+  /** ROOT **/
   .App{
     margin: 0 auto;
   
@@ -24,58 +24,81 @@ html{
         }
       }
     }
-  
-    .home-section {
-      background-color: lightgoldenrodyellow;
-      height: 100vh;
-      max-width: 1800px; // figure out what to do w/ max size later
-      display: flex;
-      margin: 0 auto;
-      
-        .header-container {
-          background-color: red;
-          height: 100% !important;
-          float: left;
-          width: 50%;
+    
+    .home-wrapper{
+        /** HOME CONTAINER **/
+      background-color: blue;
 
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
+      .home-section {
+        background-color: lightgoldenrodyellow;
+        height: 100vh;
+        width: 86%;
+        display: flex;
+        margin: 0 auto;
+        
+          .header-container {
+            background-color: red;
+            height: 100% !important;
+            float: left;
+            width: 50%;
 
-          h1 {
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            color: #232020;
+
+            h1 {
+              margin-bottom: 20px;
+              max-width: 700px;
+              // margin-left: 70px;
+            }
+
+            h3 {
+              font-size: 14px;
+              margin-bottom: 10rem;
+              // margin-left: 70px;
+            }
           }
 
-          h3 {
-            font-size: 14px;
-            margin-bottom: 10rem;
+          .canvas-container {
+            width: 50%;
+            background-color: rgb(193, 193, 255);
           }
-        }
 
-        .canvas-container {
-          width: 50%;
-          background-color: blue;
-        }
+          @media sreen and (max-width: 900px) {
+            flex-direction: column;
+          }
+      }
+
+      .home-section::before {
+        content: "";
+        border-bottom: 4px solid black;
+        z-index: 10;
+        width: 86%;
+        top: 86%;
+        position: absolute;
+      }
     }
     
-  
+    
+    /** ABOUT CONTAINER **/
     .about-section {
       background-color: lightcoral;
       height: 100vh;
-      // scroll-snap-align: center;
     }
-  
+    
+    /** WORK CONTAINER **/
     .work-section {
       background-color: lightgreen;
       height: 100vh;
-      // scroll-snap-align: center;
     }
-  
+    
+    /** CONTACT CONTAINER **/
     .contact-section {
       background-color: lightseagreen;
       height: 100vh;
       margin-bottom: 0px;
-      // scroll-snap-align: center;
     }
   
   }
