@@ -77,8 +77,12 @@ html{
         z-index: 10;
         width: 86%;
         // top: 86%;
-        height: 90%;
+        height: 88%;
         position: absolute;
+
+        @media screen and (min-height: 1000px) {
+          height: 90%;
+        }
       }
     }
     
