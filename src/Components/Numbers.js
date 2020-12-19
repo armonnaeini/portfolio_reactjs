@@ -1,0 +1,68 @@
+import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
+
+class Numbers extends Component {
+    state = {};
+    render() {
+        return(
+            <div className = "project-section">
+              <div className = "project-wrapper">
+                    <div className = "project-info-wrapper">
+                        <div className = "project-info-container">
+                            <h1 className = "project-header">Arbitrary Numbers</h1>
+                            <h2 className = "project-sub-header">Javascript, GLSL, Fashion Design</h2>
+                            <p className = "project-blurb">
+                                Arbitrary Numbers is a fashion brand I started up in April of 2020. Right at the beginning of
+                                Covid-19 and quarantine, I found some extra time on my hands. I decided to make a dream of mine
+                                a reality; I've always wanted create my own clothing brand, given my extreme interest in fashion design.
+                                <br></br>
+                                <br></br>
+                                The philosphy behind Arbitrary Numbers revolves around combing art and design with code, three
+                                things I am extremely passionate about. I fell in love with creative coding/computation during 
+                                my undergrad career at CU Boulder, where I started to create art using various programming 
+                                langueges and softwares, such as Javscript or GLSL.
+                                <br></br>
+                                <br></br>
+                                The project is small and very young, but it means the world to me. I hope to take this to the moon
+                                one day.
+                                
+                            </p>
+                        </div>
+                    </div>
+                  
+                    <div className = "project-image-container">
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/QbcmMKp.png" href="img1" className = "responsive-image"/>
+                        </div>
+                        <div className = "video-container">
+                            <ReactPlayer
+                                id = "react-player"
+                                playsInline
+                                className='react-player'
+                                url='https://player.vimeo.com/video/380535086'
+                                playing
+                                controls="true"
+                                width= "90%"
+                                height="90%"
+                                muted
+                            />
+                        </div>
+
+                      
+
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/sGZ5h9i.png" href="img1" className = "responsive-image"/>
+                        </div>  
+
+                        <div className = "img-container">
+                            <img src ="https://cdn.shopify.com/s/files/1/0278/4274/0310/products/A6811F7F-8C7F-4065-8B00-05CC56DCB6A6_1080x.jpg?v=1589484452" href="img1" className = "responsive-image"/>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        ); 
+    }
+}
+
+export default Numbers;

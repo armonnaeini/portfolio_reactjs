@@ -52,11 +52,14 @@ class Work extends Component {
                                     <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/sHR0gnb.jpg"/>Body
                                 </li>
                             </Link>
-                                
-                        
+                            
+                            <Link to ="/numbers">
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/4ToqtZf.png"/>Arbitrary Numbers
+                                </li>
+                            </Link>
 
-                            <li className = "project">
-                            <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/4ToqtZf.png"/>Arbitrary Numbers</li>
+                            
                             <li className = "project">
                             <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/sumJLiB.png"/>FuegoUX</li>
                             <li className = "project">New Media Art</li>
