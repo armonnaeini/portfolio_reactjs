@@ -4,11 +4,20 @@ $primary-col: #fff;
 $secondary-col: #EA2B1F;
 
 html{
-  
+  body{
+    font-family: neue-haas-grotesk-display, sans-serif;
+  }
+
   /** ROOT **/
   .App{
     margin: 0 auto;
-  
+    
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+
+    }
+
     .nav-bar {
       position: fixed;
       top: 0;
@@ -29,7 +38,7 @@ html{
 
       .home-section {
         height: 100vh;
-        width: 86%;
+        width: 83%;
         display: flex;
         margin: 0 auto;
         
@@ -69,7 +78,7 @@ html{
         content: "";
         border-bottom: 4px solid black;
         z-index: 10;
-        width: 86%;
+        width: 83%;
         // top: 86%;
         height: 86%;
         position: absolute;
@@ -83,23 +92,27 @@ html{
     
     /** ABOUT CONTAINER **/
     .about-section {
-      background-color: lightcoral;
+      z-index: -100 !important;
       height: 100vh;
-      width: 86%;
+      width: 83%;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       .about-wrapper {
         width: 100%;
-        background-color: red;
         height: 100%;
         display: flex;
-
+        justify-content: center;
+        
         .title-container {
+          padding-top: 150px;
           display: flex; 
           flex-direction: column;
           height: 100%;
           width: 50%;
-          background-color: yellow;
           justify-content: space-between;
 
           .title-h {
@@ -112,11 +125,16 @@ html{
           flex-direction: column;
           height: 100%;
           width: 50%;
-          background-color: green;
           justify-content: space-between;
+          padding-top: 140px;
 
           .blurb-p {
             height: 33%;
+
+            p {
+              font-size: 16px;
+              font-weight: 500;
+            }
           }
         }
       }
@@ -124,15 +142,133 @@ html{
     
     /** WORK CONTAINER **/
     .work-section {
-      background-color: lightgreen;
+   
+      z-index: 100;
       height: 100vh;
+  
+
+
+      .work-wrapper{
+        width: 83%;
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+
+        .work-title {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .work-list-container {
+          width: 60%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          position: relative;
+
+          ul {
+            z-index: 5;
+
+            a {
+              text-decoration: none;
+              color: black;
+            }
+            li {
+              list-style: none;
+              font-size: 55px;
+              line-height: 65px;
+              text-align: right;              
+
+              .hover-img {
+                position: absolute;
+                width: 350px;
+                height: 400px;
+                object-fit: cover;
+                transform: translateX(-50%) translateY(-50%);
+
+                top: 50;
+                left: 50%;
+                z-index: 100 !important;
+                opacity: 0;
+
+                visibility: hidden;
+                overflow: visible;
+                pointer-events: none;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+              }
+            }
+          }
+        }
+
+
+      }
     }
     
     /** CONTACT CONTAINER **/
     .contact-section {
       background-color: lightseagreen;
-      height: 100vh;
+      height: 40vh;
       margin-bottom: 0px;
+    }
+
+    .project-section {
+      width: 100%;
+      height: 100vh;
+      background-color: red;
+      max-width: 84%;
+      margin: 0 auto;
+
+
+      .project-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        display: flex;
+
+        .project-info-wrapper{
+          width: 40%;
+          background-color: yellow;
+          height: 100%;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+          .project-info-container {
+            margin-bottom: 20%;
+            h1 {
+              font-size: 56px;
+            }
+
+            h2 {
+              font-size: 16px;
+              margin-top: 20px;
+            }
+            
+            p {
+              font-size: 14px;
+              margin-top: 60px;
+            }
+          }
+          
+        }
+
+        .project-image-container {
+          background-color: red;
+          width: 60%;
+          height: 100vh;
+          font-size: 50px;
+          overflow: auto;
+
+          
+        }
+      }
     }
   
   }

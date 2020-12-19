@@ -19,14 +19,15 @@ class About extends Component {
                     </div>
                     <div className = "blurb-container">
                         <div className = "blurb-p">
-                            <p>I am a designer, developer and most importantly a creative technologist. I 
-                                combine my passion for art and design with my skills in software/hardware 
-                                engineering to produce meaningful experiences across a diverse range of media. 
-                                Simply put, I am a creator with a lot of tricks/tools up my sleeve. Using a 
-                                multitude of technologies as wella s both sides of my brain, I able to create 
+                            <p> Yo... okay hear me out. It's difficult for me to concisely define what I am, but I stick with 
+                                'representing' myself as a  designer/developer hybrid and a multimedia artist. My work 
+                                revolves around combining my passion and skillset in experiential design, art, and engineering to produce 
+                                meaningful experiences for a diverse range of media. At the end of the day, I'm simply a creator. 
+                                I like to produce things for others to experience. Using a multitude of technologies as well
+                                 as both sides of my brain, I able to create 
                                 digital/physical solutions as well as artistic and entertaining expereinces. 
                                 As a side gig, I’m also a fashion designer; it’s fun stuff, you can find out 
-                                more in the work section below. 
+                                more in the work section below.     
                             </p>
                         </div>
                         <div className = "blurb-p">

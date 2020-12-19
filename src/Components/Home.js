@@ -13,6 +13,9 @@ class Home extends Component {
                     <div className = "canvas-container">
                         <p>canvas goes here</p>
                     </div>
+                    <div className ="underline">
+                        <div className= "line">a</div>
+                    </div>
                 </div>
             </div>
                 

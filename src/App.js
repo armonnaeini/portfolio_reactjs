@@ -1,27 +1,46 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import NavBar from './Components/NavBar';
-import Home from './Components/Home';
-import About from './Components/About';
-import Work from './Components/Work';
-import Contact from './Components/Contact';
-
-
+import MainHome from './Components/MainHome';
+import Body from './Components/Body';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  BrowserRouter
+} from "react-router-dom";
 
 function App() {
+  // const scrollRef = React.createRef();
+
+  // useEffect(() => {
+  //   const scroll = new LocomotiveScroll({
+  //     el: scrollRef.current,
+  //     smooth: true,
+  //     lerp: .2,
+  //     multiplier: .1
+  //   });
+  // });
+
+
+
   return (
-    <div className="App">
-      <div className = "container-scroll">
-        <NavBar />
-        <Home />
-        <About />
-        <Work />
-        <Contact />
+    <Router>
+       <div className="App" >
+        <NavBar / >
+        <Switch>
+          <Route exact path="/" component={ MainHome }/>
+          <Route path= "/body" component = { Body } key = "asdf"/>
+        </Switch>
       </div>
-    </div>
+    </Router>
+   
+  
   );
 }
+
+
 
 export default App;
