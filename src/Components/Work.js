@@ -52,33 +52,61 @@ class Work extends Component {
                                     <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/sHR0gnb.jpg"/>Body
                                 </li>
                             </Link>
-                            
+
+                            <Link to ='/filters'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/EfDrViK.png"/>Face Filters
+                                </li>
+                            </Link>
+
                             <Link to ="/numbers">
                                 <li className = "project">
                                     <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/4ToqtZf.png"/>Arbitrary Numbers
                                 </li>
                             </Link>
+                                
+                            <Link to='/media'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/iMSpmeq.png"/>New Media Art
+                                </li>
+                            </Link>
 
+                            <Link to="/fuego">
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/sumJLiB.png"/>FuegoUX
+                                </li>
+                            </Link>
                             
-                            <li className = "project">
-                            <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/sumJLiB.png"/>FuegoUX</li>
-                            <li className = "project">New Media Art</li>
-                            <li className = "project">
-                            <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/J0Z57ra.png"/>
-                                Meow Wolf</li>
-                            <li className = "project">
-                            <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/RnkziOc.png"/>
-                                Giide</li>
-                            <li className = "project"><img alt = "ahh" className = "hover-img" src="https://i.imgur.com/EfDrViK.png"/>
-                                Face Filters</li>
-                            <li className = "project">
-                                <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/nlYJMNn.png"/>
-                                Sher Edling</li>
-                            <li className = "project">Sirepo</li>
-                            <li className = "project">
-                            <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/LdeNYvL.png"/>
-                                putphoneaway</li>
-                            <li className = "project">Datamoshing</li>
+                            <Link to ='/meow'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/J0Z57ra.png"/> Meow Wolf
+                                </li>
+                            </Link>
+
+                            <Link to ='/sher'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/nlYJMNn.png"/>Sher Edling
+                                </li>
+                            </Link>
+
+                            <Link to ='/giide'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/RnkziOc.png"/>Giide
+                                </li>
+                            </Link>
+                            
+                            <Link to ='/pfa'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/LdeNYvL.png"/>putphoneaway
+                                </li>
+                            </Link>
+
+                            <Link to ='/mosh'>
+                                <li className = "project">
+                                    <img alt = "ahh" className = "hover-img" src="https://i.imgur.com/LdeNYvL.png"/>Datamoshing
+                                </li>
+                            </Link>
+
                             {/* <li className = "project">Typography</li> */}
                         </ul>
                     </div>

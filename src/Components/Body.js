@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 class Body extends Component {
     state = {};
@@ -7,6 +9,8 @@ class Body extends Component {
         return(
             <div className = "project-section">
               <div className = "project-wrapper">
+          
+                    <Link to ="/"><h1>RETURN</h1></Link>
                     <div className = "project-info-wrapper">
                         <div className = "project-info-container">
                             <h1 className = "project-header">Body</h1>

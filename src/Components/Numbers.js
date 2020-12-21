@@ -20,7 +20,9 @@ class Numbers extends Component {
                                 The philosphy behind Arbitrary Numbers revolves around combing art and design with code, three
                                 things I am extremely passionate about. I fell in love with creative coding/computation during 
                                 my undergrad career at CU Boulder, where I started to create art using various programming 
-                                langueges and softwares, such as Javscript or GLSL.
+                                langueges and softwares, such as Javscript or GLSL. I then thought to myself why I do not use
+                                this practice to design clothes. Arbitrary Numbers' designs are all made/inspired with code,
+                                ranging from JS to C++. The site was also custom developed by myself using Shopify and Three.js.
                                 <br></br>
                                 <br></br>
                                 The project is small and very young, but it means the world to me. I hope to take this to the moon
@@ -32,23 +34,8 @@ class Numbers extends Component {
                   
                     <div className = "project-image-container">
                         <div className = "img-container">
-                            <img src ="https://i.imgur.com/QbcmMKp.png" href="img1" className = "responsive-image"/>
+                            <img src ="https://i.imgur.com/wukhM8S.png" href="img1" className = "responsive-image"/>
                         </div>
-                        <div className = "video-container">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/380535086'
-                                playing
-                                controls="true"
-                                width= "90%"
-                                height="90%"
-                                muted
-                            />
-                        </div>
-
-                      
 
                         <div className = "img-container">
                             <img src ="https://i.imgur.com/sGZ5h9i.png" href="img1" className = "responsive-image"/>
@@ -57,6 +44,9 @@ class Numbers extends Component {
                         <div className = "img-container">
                             <img src ="https://cdn.shopify.com/s/files/1/0278/4274/0310/products/A6811F7F-8C7F-4065-8B00-05CC56DCB6A6_1080x.jpg?v=1589484452" href="img1" className = "responsive-image"/>
                         </div>
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/0oKJ8EM.jpg" href="img1" className = "responsive-image"/>
+                        </div>  
                     </div>
 
             </div>
