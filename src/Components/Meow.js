@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Meow extends Component {
     state = {};
@@ -8,6 +8,11 @@ class Meow extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
                             <h1 className = "project-header">Meow Wolf</h1>
                             <h2 className = "project-sub-header">COMING SOON</h2>

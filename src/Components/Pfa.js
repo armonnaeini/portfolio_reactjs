@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Pfa extends Component {
     state = {};
@@ -8,16 +8,21 @@ class Pfa extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
                             <h1 className = "project-header">putphoneaway</h1>
-                            <h2 className = "project-sub-header">UX Discovery, UX Design, Web Development</h2>
+                            <h2 className = "project-sub-header">UX Design, Web Development, Shopify</h2>
                             <p className = "project-blurb">
-                                A website I recently fully re-designed and developed, while I was working at Vermilion Design + Digital.
-                                Sher Edling LLP is a law firm representing states, cities, public agencies
-                                and businesses in high-impact environmental cases. They approached Vermilion with a desire to completely
-                                revamp their website experience, in terms of both UX and design. I led the project and transformed 
-                                their old, non-intuitive experience into something much more digestable.
+                                putphoneaway is a sticker company that seeks to raise awareness regarding the dangers
+                                of texting and driving. I redesigned and developed their Shopify website, using custom
+                                Liquid code.
                             </p>
+                            <span className = "site-link"><a href="https://putphoneaway.com/" target="_blank">Visit site</a></span>
+
                         </div>
                     </div>
                   

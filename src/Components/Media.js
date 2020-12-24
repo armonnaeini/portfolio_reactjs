@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Media extends Component {
     state = {};
@@ -8,13 +9,20 @@ class Media extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
                             <h1 className = "project-header">New Media Art</h1>
-                            <h2 className = "project-sub-header">TouchDesigner, GLSL, openFrameworks</h2>
+                            <h2 className = "project-sub-header">TouchDesigner, GLSL, Python, openFrameworks</h2>
                             <p className = "project-blurb">
-                                A website I recently re-designed and developed, FuegoUX is an experiential design company
-                                with an ephasis on simplicity and modernism. Fuego's new site was designed with a sense of 
-                                minimalism, with a strong emphasis on both typography and iconagraphy. 
+                                For the past year and a half, I have been training myself in TouchDesigner. I initially started
+                                my creative coding endeavors in p5.js and Processing, then moved onto openFrameworks. After discovering
+                                TouchDesigner, I instantly fell in love and have been obsessed with the software since. I strive to 
+                                produce surreal, evoking visuals, for music videos, projections, or simply for lesiure viewing on web/mobile.
+                                The projects listed are a comobination of my works in TouchDesigner and openFrameworks.
                             </p>
                         </div>
                     </div>

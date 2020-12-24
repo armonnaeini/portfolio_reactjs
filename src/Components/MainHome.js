@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Home from './Home';
-import About from './About';
-import Work from './Work';
 import Contact from './Contact';
+import NavBar from './NavBar';
 
 class MainHome extends Component {
     state = {};
@@ -10,9 +9,9 @@ class MainHome extends Component {
         return(
 
             <div className = "container-scroll" >
+                        <NavBar / >
+
             <Home />
-            <About />
-            <Work />
             <Contact />
           </div>
        

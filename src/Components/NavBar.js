@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import { Link, Element } from 'react-scroll';
-// import { HashLink as Link } from 'react-router-hash-link';
-// import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 class NavBar extends Component {
     state = {};
@@ -12,6 +10,7 @@ class NavBar extends Component {
                   
                     {/* <NavLink smooth activeClassName="active" to="/#home" location={{pathname: document.location.pathname + document.location.hash}}>Home</NavLink>
                     <NavLink smooth to ="/#about" activeClass="active">About</NavLink> */}
+                    
                     <Link
                         activeClass="active"
                         to="home"
@@ -41,7 +40,7 @@ class NavBar extends Component {
                         to="contact-section"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={500}
                         duration={1000}
                     >Contact</Link> 
                 </ul>

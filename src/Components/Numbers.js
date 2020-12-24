@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Numbers extends Component {
     state = {};
@@ -8,6 +8,11 @@ class Numbers extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
                             <h1 className = "project-header">Arbitrary Numbers</h1>
                             <h2 className = "project-sub-header">Javascript, GLSL, Fashion Design</h2>
@@ -27,8 +32,8 @@ class Numbers extends Component {
                                 <br></br>
                                 The project is small and very young, but it means the world to me. I hope to take this to the moon
                                 one day.
-                                
                             </p>
+                            <span className = "site-link"><a href="https://arbitrarynumbers.co/" target="_blank">Visit site</a></span>
                         </div>
                     </div>
                   

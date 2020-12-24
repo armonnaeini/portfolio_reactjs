@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Mosh extends Component {
     state = {};
@@ -8,88 +8,38 @@ class Mosh extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
-                            <h1 className = "project-header">Datamosh</h1>
-                            <h2 className = "project-sub-header">Avidemux, Premiere, Destorying i and p-frames</h2>
+                            
+                            <h1 className = "project-header">Typographic Design</h1>
+                            <h2 className = "project-sub-header">Illustrator</h2>
                             <p className = "project-blurb">
-                                A website I recently re-designed and developed, FuegoUX is an experiential design company
-                                with an ephasis on simplicity and modernism. Fuego's new site was designed with a sense of 
-                                minimalism, with a strong emphasis on both typography and iconagraphy. 
+                                In my free time, I do enjoy dabbling with graphic design, particularly typographic 
+                                design. Here is a collection of some of my favorite designs I've recently created.
                             </p>
                         </div>
                     </div>
                   
                     <div className = "project-image-container">
-                        <div className = "video-container">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/492913417'
-                                playing
-                                controls="true"
-                                width= "90%"
-                                height="90%"
-                                muted
-                            />
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/89olGyR.png" href="img1" className = "responsive-image"/>
                         </div>
-
-                        <div className = "video-container">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/492914427'
-                                playing
-                                controls="true"
-                                width= "100%"
-                                height="100%"
-                                muted
-                            />
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/pQ6fbZu.png" href="img1" className = "responsive-image"/>
                         </div>
-
-                        <div className = "video-container">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/492922076'
-                                playing
-                                controls="true"
-                                width= "100%"
-                                height="100%"
-                                muted
-                            />
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/mvEGVgb.png" href="img1" className = "responsive-image"/>
                         </div>
-
-                        <div className = "video-container">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/492923920'
-                                playing
-                                controls="true"
-                                width= "100%"
-                                height="100%"
-                                muted
-                            />
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/W2QNd0l.png" href="img1" className = "responsive-image"/>
                         </div>
-
-                        <div className = "video-container">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/331350332'
-                                playing
-                                controls="true"
-                                width= "100%"
-                                height="100%"
-                                muted
-                            />
+                        <div className = "img-container">
+                            <img src ="https://i.imgur.com/h7bZVV1.png" href="img1" className = "responsive-image"/>
                         </div>
-                       
                     </div>
 
             </div>

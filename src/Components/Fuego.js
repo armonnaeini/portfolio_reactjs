@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Fuego extends Component {
     state = {};
@@ -8,6 +8,11 @@ class Fuego extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
                             <h1 className = "project-header">FuegoUX</h1>
                             <h2 className = "project-sub-header">UX Design, Web Development</h2>
@@ -16,6 +21,7 @@ class Fuego extends Component {
                                 with an ephasis on simplicity and modernism. Fuego's new site was designed with a sense of 
                                 minimalism, with a strong emphasis on both typography and iconagraphy. 
                             </p>
+                            <span className = "site-link"><a href="https://www.fuegoux.com/" target="_blank">Visit site</a></span>
                         </div>
                     </div>
                   

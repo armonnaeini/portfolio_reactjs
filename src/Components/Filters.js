@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Filters extends Component {
     state = {};
@@ -8,12 +9,17 @@ class Filters extends Component {
             <div className = "project-section">
               <div className = "project-wrapper">
                     <div className = "project-info-wrapper">
+                        <Link to ="/">
+                            <div className = "return-container">
+                                <p className =" hvr-underline-from-left">Return</p>
+                            </div>
+                        </Link>
                         <div className = "project-info-container">
                             <h1 className = "project-header">ofxARKit</h1>
-                            <h2 className = "project-sub-header">openFrameworks, C++, C#, GLSL</h2>
+                            <h2 className = "project-sub-header">openFrameworks, C++, GLSL, C#</h2>
                             <p className = "project-blurb">
-                                I love to work with augmented reaility, specifically for mobile, so I dove into 
-                                ofxARKit, openFrameworks' toolkit for ARKit on iOS. I developed two different face-tracking
+                                I absolutely love to work with augmented reaility technologies, so I dove into the mobile space working with
+                                ofxARKit, openFrameworks' toolkit for ARKit developed iOS. I developed two different face-tracking
                                 applications, where I texturize the user's face mesh with either GLSL or predefined imagery.
                             </p>
                         </div>
