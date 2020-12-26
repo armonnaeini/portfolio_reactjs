@@ -156,7 +156,8 @@ class ThreeScene extends Component{
             1000
         )
 
-        this.camera.position.z = 2.75;
+        this.camera.position.z = 3.1;
+        this.camera.position.x = .5;
         //ADD RENDERER
         this.renderer = new THREE.WebGLRenderer({ antialias: true })
         // this.renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:false});
@@ -184,10 +185,10 @@ class ThreeScene extends Component{
         var params = {
             radius: 70,
             tube:20,
-            radialSegments: 500, //lower this for optimizing
+            radialSegments: 300, //lower this for optimizing
             tubularSegments: 150,
             p: 100, // shape
-            q: 333, // shape
+            q: 111, // shape
             heightScale: 0
         };
 
@@ -280,7 +281,7 @@ class ThreeScene extends Component{
 
   render(){
       return(
-              <div id = "canvas" style={{ width: '100%', height: '85%' }}
+              <div id = "canvas" style={{ width: '100%', height: '100%' }}
           ref={(mount) => { this.mount = mount }}
         />
         

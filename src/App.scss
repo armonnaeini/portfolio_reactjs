@@ -4,17 +4,21 @@ $primary-col: #fff;
 $secondary-col: #EA2B1F;
 
 html{
+  
 
   body{
     font-family: neue-haas-grotesk-display, sans-serif;
     margin: 0;
+
+    .ReactModal__Body--open {
+      overflow: hidden;
+    }
   }
 
   .App{
-
-    max-width: 2000px;
+   
     margin: 0 auto;
-
+  
     .hvr-underline-from-left {
       display: inline-block;
       vertical-align: middle;
@@ -54,40 +58,168 @@ html{
     .test-button{
       margin-top: 500px;
     }
-
-    .nav-bar {
-      display: flex;
-      flex-direction: colum;
-      align-items: flex-end;
-      justify-content: center;
+    .test {
+      display: none;
+    }
+    
+    .nav-wrapper {
       width: 100%;
       height: 100%;
-      padding-top: 17%;
       
-      -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
-      -webkit-transform-origin: center center;
-      transform-origin: center center;
-      position: fixed;
-
-      .active {
-        font-weight: 900;
-        color: rgb(31, 29, 29);
+      .small-menu-button {
+        position: fixed;
+        background-color: red;
+        border: none;
+        z-index: 100000;
       }
+     
+      .Modal {
+        background-color: red !important;
+        .link-container-mobile {
+          background-color: yellow !important;
 
-      ul {
-        list-style-type: none;
-        padding: 0;
+          display: flex;
+          flex-direction: row;
+          height: 500px;
+          justify-content: center;
+          align-self: center;
 
-        a {
-          margin-bottom: 155px;
-          cursor: pointer;
+          .link-container {
+            background-color: green;
+          }
         }
       }
+      
+      .hamburger {
+        display: none !important;
+        z-index: 10000000000000000000;
+        margin-left: 100px !important;
+        color: black;
+        background-color: black;
+        &:focus {
+          outline: 0;
+        }
+
+        .hamburger-box {
+          color: black !important;
+
+          .hamburger-inner {
+            color: black !important;
+          }
+        }
+
+        @media screen and (max-width: 700px) {
+          display: block !important;
+          z-index: 10000000000000000000;
+          margin-right: -40px !important;
+          margin-top: -15px !important;
+        }
+      }
+
+      .modal {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 40px;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+        width: 100px;
+        height: 1100px;
+        background-color: rgba(10,10,10,.95);
+        border-radius: 4px;
+        z-index: 1000000000000000000000000000000000000;
+        z
+
+        .small-nav {
+          display: flex;
+          flex-direction: column !important;
+          font-size: 24pt;
+          justify-content: space-around !important;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-left: 30px;
+          z-index: 100000000000000000000000000000000000 !important;
+          transform: translateZ(40px);
+  
+          .close-button {
+            width: 45px;
+            background-color: rgba(0,0,0,0);
+            height: 45px;
+            position: absolute;
+            border-radius: 50px;
+            border: none;
+            z-index: 15000000000000000000000000000000000;
+            left: 81%;
+            top: .5%;
+            font-family: 'neue-haas-grotesk-display';
+            font-size: 12pt;
+            color: white;
+            cursor: pointer;
+            z-index: 1000000;
+          }
+          
+          .menu-small {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column !important;
+            z-index: 10000000000000000000000000000;
+            transform: translateZ(400px) !important;
+  
+            .aa {
+              margin-bottom: 15px;
+              
+              #small-link {
+                font-family: 'neue-haas-grotesk-display';
+                font-weight: 600;
+                color: white;
+                font-size: 50pt;
+                margin-top: -50px !important; 
+              }
+            }
+          }
+        }
+      }
+
+      .nav-bar {
+        display: flex;
+        flex-direction: colum;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 17%;
+        
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        position: fixed;
+
+      
+
+        .active {
+          font-weight: 900;
+          color: rgb(31, 29, 29);
+        }
+  
+        ul {
+          list-style-type: none;
+          padding: 0;
+  
+          a {
+            margin-bottom: 155px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      
     }
+    
     
     .home-wrapper{
       
@@ -100,17 +232,16 @@ html{
         margin: 0 auto;
 
         .cc {
-          width: 80%;
+          width: 100%;
           height: 100%;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          z-index: -1000;
 
           #canvas {
-            padding-left: 100px;
-            width: 100%;
-            height: 100%;
+            padding-left: 10px;
             margin: 0 auto;
           }
         }
@@ -140,6 +271,7 @@ html{
 
           @media sreen and (max-width: 900px) {
             flex-direction: column;
+            width: 80%;
           }
       }
 
@@ -151,7 +283,7 @@ html{
         // top: 86%;
         height: 94%;
         position: absolute;
-
+        z-index: -100;
         @media screen and (min-height: 1700px) {
           height: 98%;
         }
@@ -164,7 +296,7 @@ html{
 
       @media screen and (max-width: 900px) {
         display: flex;
-        width: 83%;
+        width: 80%;
         margin: 0 auto;
         height: 100%;
 
@@ -189,6 +321,7 @@ html{
 
       @media screen and (max-width: 900px){
         display: none;
+        
       }
       .about-wrapper {
         width: 100%;
@@ -298,6 +431,7 @@ html{
 
               @media screen and (max-width: 1000px) {
                 text-align: left;
+                font-size: 45px;
               }
 
               .hover-img {
