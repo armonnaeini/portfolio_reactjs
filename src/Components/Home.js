@@ -4,145 +4,12 @@ import gsap from "gsap";
 import { HashLink as Link } from 'react-router-hash-link';
 import { noise } from './noise';
 
-/*
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+var theta2 = 0.01;
+
 class ThreeScene extends Component{
-
-    componentDidMount(){
-        const width = this.mount.clientWidth;
-        const height = this.mount.clientHeight;
-        let renderer = new THREE.WebGLRenderer({ antialias: true });
-
-        // const renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:false});
-        renderer.setClearColor(0xffffff);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setSize(width, height);
-        this.mount.appendChild(renderer.domElement)
-
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera( 45, window.innerWidth/window.innerHeight, 0.1, 1000 );
-        camera.position.z = 3;
-        var light = new THREE.AmbientLight( 0xffffff, .1 );
-        light.position.set( 0, 1, 1 ).normalize();
-        scene.add(light);
-
-
-        const circleTexture = new THREE.TextureLoader().load("https://threejs.org/examples/textures/sprites/disc.png");
-
-        var c = document.createElement("canvas");
-        c.width = 128;
-        c.height = 128;
-        var ctx = c.getContext("2d");
-        ctx.clearRect(0, 0, 128, 128);
-        ctx.fillStyle = "white";
-        ctx.beginPath();
-        ctx.arc(64, 64, 64, 0, 2 * Math.PI);
-        ctx.fill();
-        var tex = new THREE.CanvasTexture(c);
-        let material2 = new THREE.PointsMaterial({ color: 0x3d403d, size: .005,map: tex,  alphaMap: tex,
-        alphaTest: .5});
-
-        var params = {
-            radius: 100,
-            tube: 28,
-            radialSegments: 250, //lower this for optimizing
-            tubularSegments: 100,
-            p: 100, // shape
-            q: 999, // shape
-            heightScale: 0
-        };
-
-        var geometry = new THREE.TorusKnotGeometry(
-            params.radius,
-            params.tube,
-            params.radialSegments,
-            params.tubularSegments,
-            params.p,
-            params.q,
-            params.heightScale
-        );
-
-        const projects = document.querySelectorAll('.project');
-        console.log(projects.length);
-
-        
-
-        const sphere = new THREE.Points(geometry, material2);
-        scene.add(sphere);
-		window.addEventListener( 'resize', onWindowResize, false );
-
-        function onWindowResize() {
-			camera.aspect = window.innerWidth/ window.innerHeight;
-			camera.updateProjectionMatrix();
-            renderer.setSize( window.innerWidth, window.innerHeight );      
-        }
-
-        const update = function() {
-            // change '0.003' for more aggressive animation
-            const time = performance.now() * 0.00025;
-            // change 'k' value for more spikes
-            const k = 2.25
-            for (var i = 0; i < sphere.geometry.vertices.length; i+=1) {
-                const p = sphere.geometry.vertices[i];
-                p.normalize().multiplyScalar(.8 + .35 * noise.perlin3(p.x * k - time, p.y * k, p.z* k/2));
-            }
-            sphere.geometry.computeVertexNormals();
-            sphere.geometry.normalsNeedUpdate = true;
-            sphere.geometry.verticesNeedUpdate = true;
-            onWindowResize();
-        }
-
-
-        function animate() {
-        sphere.rotation.x += 0.001;
-        sphere.rotation.y += 0.001;
-
-        update();
-            renderer.render(scene,camera);
-            requestAnimationFrame(animate);
-        }
-        animate();
-
-        projects.forEach((el) => {
-            const image = el.querySelector('img')
-            el.addEventListener('mouseenter', (e) => {
-            gsap.to(image, { autoAlpha: 1 });
-            console.log("enter");
-            })
-        
-            el.addEventListener('mouseleave', (e) => {
-            gsap.to(image, { autoAlpha: 0 });
-            
-            })
-            
-            el.addEventListener('mousemove', (e) => {
-            gsap.set(image, { x: e.offsetX -600,
-                                y: e.offsetY });
-            })
-        })
-
-        
-      geometry.dispose();
-       material2.dispose();
-        // c.dispose();
-    }
-
-    componentWillUnmount(){
-        this.stop()
-        this.mount.removeChild(renderer.domElement)
-    }
-
-    stop = () => {
-        cancelAnimationFrame(this.frameId)
-    }
-  
-    render(){
-      return(
-        <div id="canvas" ref={(mount) => { this.mount = mount }} />
-      )
-    }
-  }*/
-
-  class ThreeScene extends Component{
     componentDidMount(){
         const width = this.mount.clientWidth
         const height = this.mount.clientHeight
@@ -156,8 +23,8 @@ class ThreeScene extends Component{
             1000
         )
 
-        this.camera.position.z = 3.1;
-        this.camera.position.x = .5;
+        this.camera.position.z = 2.9;
+        this.camera.position.x = .25;
         //ADD RENDERER
         this.renderer = new THREE.WebGLRenderer({ antialias: true })
         // this.renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:false});
@@ -179,13 +46,13 @@ class ThreeScene extends Component{
         ctx.arc(32, 32, 32, 0, 2 * Math.PI);
         ctx.fill();
         var tex = new THREE.CanvasTexture(c);
-        const material2 = new THREE.PointsMaterial({ color: 0x3d403d, size: .003,map: tex,  alphaMap: tex,
+        const material2 = new THREE.PointsMaterial({ color: 0x3d403d, size: .004,map: tex,  alphaMap: tex,
         alphaTest: .5});
 
         var params = {
-            radius: 70,
+            radius: 50,
             tube:20,
-            radialSegments: 300, //lower this for optimizing
+            radialSegments: 200, //lower this for optimizing
             tubularSegments: 150,
             p: 100, // shape
             q: 111, // shape
@@ -255,7 +122,7 @@ class ThreeScene extends Component{
          const k = 2.25
          for (var i = 0; i < this.sphere.geometry.vertices.length; i+=1) {
              const p = this.sphere.geometry.vertices[i];
-             p.normalize().multiplyScalar(.8 + .35 * noise.perlin3(p.x * k - time, p.y * k, p.z* k/2));
+             p.normalize().multiplyScalar(.9 + .35 * noise.perlin3(p.x * k - time, p.y * k, p.z* k/2));
          }
         //  this.sphere.geometry.computeVertexNormals();
         //  this.sphere.geometry.normalsNeedUpdate = true;
@@ -281,13 +148,17 @@ class ThreeScene extends Component{
 
   render(){
       return(
-              <div id = "canvas" style={{ width: '100%', height: '100%' }}
+              <div id = "canvas" style={{ width: '85%', height: '80%' }}
           ref={(mount) => { this.mount = mount }}
         />
         
       )
     }
   }
+
+class Hover extends Component {
+
+}
 
 
 class Home extends Component {
@@ -323,10 +194,12 @@ class Home extends Component {
                             <h1>Who I am</h1>
                             <div className = "blurb-p">
                                 <p>
-                                    I like to consider myself a multimedia designer and engineer, as well as a visual artist. Producing 
-                                    experiences, solutions, and artistic expressions across a variety of media is truly what I am 
-                                    so passionate about. Self-expression is something that I resonate with, and luckily I have been
-                                    able to find a niche.
+
+                                    I am a creative technologist and multimedia producer. I strive to combine computer science with art + design
+                                    to produce experiences, solutions and artistic expressions across a variety of media. Self-expression
+                                    is an extremely important concept to me, and I've learned to manifest the trait into the work that I design
+                                    and develop.
+                                    
                                 </p>
                             </div>
                         </div>
@@ -339,8 +212,7 @@ class Home extends Component {
                                         AR development + experimentation<br></br>
                                         Interactive installation design + development<br></br>
                                         Generative visual development<br></br>
-                                        Graphic design<br></br>
-                                        2D animation
+                                        Graphic design + animation
                                     </p>
                                 </div>
                         </div>
@@ -377,11 +249,13 @@ class Home extends Component {
                         <div className = "blurb-container">
                             <div className = "blurb-p">
                                 <p>
-                                    I like to consider myself a multimedia designer and engineer, as well as a visual artist. Producing 
-                                    experiences, solutions, and artistic expressions across a variety of media is truly what I am 
-                                    so passionate about. Self-expression is something that I resonate with, and luckily I have been
-                                    able to find a niche
-                                    
+                                    I am a creative technologist and multimedia producer. I strive to combine computer science with art + design
+                                    to produce experiences, solutions and artistic expressions across a variety of media. Self-expression
+                                    is an extremely important concept to me, and I've learned to manifest the trait into the work that I design
+                                    and develop.<br></br>
+                                    <div>
+                                        <a href = "https://vimeo.com/385177276">Learn a little bit more about me.</a>
+                                    </div>
                                 </p>
                             </div>
 
@@ -392,8 +266,8 @@ class Home extends Component {
                                     AR development + experimentation<br></br>
                                     Interactive installation design + development<br></br>
                                     Generative visual development<br></br>
-                                    Graphic design<br></br>
-                                    2D animation
+                                    Graphic design + animation
+
                                 </p>
                             </div>
                             <div className = "blurb-p">
@@ -486,7 +360,25 @@ class Home extends Component {
                     </div>
                 </div>
 
-             
+                <div className = "contact-section" id = "contact">
+                <div className="header-container">
+                <h1>Get in touch with me.</h1>
+                <p>Let's make something cool together.</p>
+                </div>
+
+                <div className = "contact-container">
+                    <a href="mailto:work@armonnn.com">
+                        <h1 >EMAIL</h1>
+                    </a>
+                    <a href = "https://www.linkedin.com/in/armonnaeini/" target="_blank">
+                        <h1>LINKEDIN</h1>
+                    </a>
+                    <a href = "https://www.instagram.com/underscore_armon/" target="_blank">
+                        <h1>INSTAGRAM</h1>
+                    </a>
+                    <h1>VIMEO</h1>
+                </div>
+            </div>
                
             </div>
             </Fragment>

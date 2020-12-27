@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Home from './Home';
-import Contact from './Contact';
 import NavBar from './NavBar';
 
 class MainHome extends Component {
@@ -12,7 +11,6 @@ class MainHome extends Component {
                         <NavBar / >
 
             <Home />
-            <Contact />
           </div>
        
         ); 

@@ -36,8 +36,21 @@ class Media extends Component {
                                 url='https://player.vimeo.com/video/492913417'
                                 playing
                                 controls="true"
-                                width= "90%"
-                                height="90%"
+                                width= "89%"
+                                height="89%"
+                                muted
+                            />
+                        </div>
+
+                        <div className = "video-container-media">
+                            <ReactPlayer
+                                id = "react-player"
+                                playsInline
+                                className='react-player'
+                                url='https://player.vimeo.com/video/495055476'
+                                controls="true"
+                                width= "89%"
+                                height="89%"
                                 muted
                             />
                         </div>
@@ -48,7 +61,7 @@ class Media extends Component {
                                 playsInline
                                 className='react-player'
                                 url='https://player.vimeo.com/video/492914427'
-                                playing
+                                
                                 controls="true"
                                 width= "100%"
                                 height="100%"
@@ -62,7 +75,7 @@ class Media extends Component {
                                 playsInline
                                 className='react-player'
                                 url='https://player.vimeo.com/video/492922076'
-                                playing
+                                
                                 controls="true"
                                 width= "100%"
                                 height="100%"
@@ -76,7 +89,7 @@ class Media extends Component {
                                 playsInline
                                 className='react-player'
                                 url='https://player.vimeo.com/video/492923920'
-                                playing
+                                
                                 controls="true"
                                 width= "100%"
                                 height="100%"
@@ -90,7 +103,7 @@ class Media extends Component {
                                 playsInline
                                 className='react-player'
                                 url='https://player.vimeo.com/video/331350332'
-                                playing
+                                
                                 controls="true"
                                 width= "100%"
                                 height="100%"
