@@ -172,7 +172,7 @@ class Home extends Component {
                     <div className = "home-section">
 
                         <div className = "header-container">
-                            <h1>A digital daydream.</h1>
+                            <h1>Digital dreams.</h1>
                             <h3>Howdy, my name is Armon Naeini. Welcome to my personal portfolio.</h3>
                         </div>
                         
@@ -376,7 +376,9 @@ class Home extends Component {
                     <a href = "https://www.instagram.com/underscore_armon/" target="_blank">
                         <h1>INSTAGRAM</h1>
                     </a>
-                    <h1>VIMEO</h1>
+                    <a href = "https://vimeo.com/armonnn" target = "_blank">
+                        <h1>VIMEO</h1>
+                    </a>
                 </div>
             </div>
                

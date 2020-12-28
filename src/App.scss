@@ -64,6 +64,34 @@ html{
       justify-content: flex-end;
       float: right;
 
+      .nav-bar-safari {
+        display: none;
+      }
+
+      @media not all and (min-resolution:.001dpcm) { 
+        @supports (-webkit-appearance:none) {
+          .nav-bar-safari {
+            display: block;
+            position: fixed;
+            padding-top: 20px;
+            padding-right: 40px;
+
+            .link-container {
+              margin-bottom: 15px;
+            }
+
+            .active {
+              color: black;
+              font-weight: 600;
+            }
+          }
+
+          .nav-bar {
+            display: none !important;
+          }
+        }
+      }
+
       .nav-bar-mobile {
         display: none;
 
