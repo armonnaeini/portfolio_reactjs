@@ -18,7 +18,7 @@ class Fuego extends Component {
                             <h2 className = "project-sub-header">UX Design, Web Development</h2>
                             <p className = "project-blurb">
                                 A website I recently re-designed and developed, FuegoUX is an experiential design company
-                                with an ephasis on simplicity and modernism. Fuego's new site was designed with a sense of 
+                                with an emphasis on simplicity and iconography. Fuego's new site was designed with a sense of 
                                 minimalism, with a strong emphasis on both typography and iconagraphy. 
                             </p>
                             <span className = "site-link"><a href="https://www.fuegoux.com/" target="_blank">Visit site</a></span>

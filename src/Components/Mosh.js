@@ -18,8 +18,8 @@ class Mosh extends Component {
                             <h1 className = "project-header">Typographic Design</h1>
                             <h2 className = "project-sub-header">Illustrator</h2>
                             <p className = "project-blurb">
-                                In my free time, I do enjoy dabbling with graphic design, particularly typographic 
-                                design. Here is a collection of some of my favorite designs I've recently created.
+                                In my free time, I enjoy exploring graphic design, particularly typography. 
+                                Here are a few designs that I'm particularly proud of.
                             </p>
                         </div>
                     </div>

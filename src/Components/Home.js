@@ -23,8 +23,8 @@ class ThreeScene extends Component{
             1000
         )
 
-        this.camera.position.z = 2.9;
-        this.camera.position.x = .25;
+        this.camera.position.z = 3.5;
+        // this.camera.position.x = -.55;
         //ADD RENDERER
         this.renderer = new THREE.WebGLRenderer({ antialias: true })
         // this.renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:false});
@@ -148,9 +148,13 @@ class ThreeScene extends Component{
 
   render(){
       return(
-              <div id = "canvas" style={{ width: '85%', height: '80%' }}
+        
+              <div id = "canvas" style={{ 
+                  width: '100%', height: '100%', marginLeft: '0%', zIndex: '100'}}
           ref={(mount) => { this.mount = mount }}
-        />
+        >
+            
+        </div>
         
       )
     }
@@ -168,9 +172,12 @@ class Home extends Component {
         return(
             <Fragment>
                 <div className = "home-wrapper" id = "home">
+                <div className = "mobile-cc">
+                        <ThreeScene/>
 
+                        </div>
                     <div className = "home-section">
-
+                        
                         <div className = "header-container">
                             <h1>Digital dreams.</h1>
                             <h3>Howdy, my name is Armon Naeini. Welcome to my personal portfolio.</h3>
@@ -220,7 +227,7 @@ class Home extends Component {
                             <h1>What I know</h1>
                                 <div className = "blurb-p">
                                     <p><span>Design*</span><br></br>
-                                        Full Adove Creative Suite, Sketch, Figma, InVision, Blender, Avidemux;), SparkAR
+                                        Full Adobe Creative Suite, Sketch, Figma, InVision, Blender, Avidemux;), SparkAR
                                         <br></br><br></br>
                                         <span>Development {">"}_</span>
                                         <br></br>
@@ -267,12 +274,11 @@ class Home extends Component {
                                     Interactive installation design + development<br></br>
                                     Generative visual development<br></br>
                                     Graphic design + animation
-
                                 </p>
                             </div>
                             <div className = "blurb-p">
                                 <p><span>Design*</span><br></br>
-                                    Full Adove Creative Suite, Sketch, Figma, InVision, Blender, Avidemux;), SparkAR
+                                    Full Adobe Creative Suite, Sketch, Figma, InVision, Blender, Avidemux;), SparkAR
                                     <br></br><br></br>
                                     <span>Development {">"}_</span>
                                     <br></br>

@@ -19,7 +19,7 @@ class Filters extends Component {
                             <h2 className = "project-sub-header">openFrameworks, C++, GLSL, C#</h2>
                             <p className = "project-blurb">
                                 I absolutely love to work with augmented reaility technologies, so I dove into the mobile space working with
-                                ofxARKit, openFrameworks' toolkit for ARKit developed iOS. I developed two different face-tracking
+                                ofxARKit, openFrameworks' port for Apple's ARKit. I developed two different face-tracking
                                 applications, where I texturize the user's face mesh with either GLSL or predefined imagery.
                             </p>
                         </div>

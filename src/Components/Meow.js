@@ -17,7 +17,7 @@ class Meow extends Component {
                             <h1 className = "project-header">Meow Wolf</h1>
                             <h2 className = "project-sub-header">COMING SOON</h2>
                             <p className = "project-blurb">
-                                I'm currently working on an installation within the new Meow Wolf building located in Denver, CO,
+                                I'm currently working with a team of creative technologist to develop an installation within the new Denver based Meow Wolf,
                                 set to launch late 2021.
                                 
                                 What I have in store is crazy, but for now, I have to keep it on the hush. Stay tuned.

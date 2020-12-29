@@ -66,10 +66,20 @@ class NavBar extends Component {
                             duration={1000}
                         >Home</Link>
                     </div>
-                    <div className = "link-container">
+                    <div className = "link-container-about-nonmobile">
                         <Link
                                 activeClass="active"
                                 to="about-section"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={1000}
+                            >About</Link>
+                    </div>
+                    <div className = "link-container-about-mobile">
+                        <Link
+                                activeClass="active"
+                                to="about-section-mobile"
                                 spy={true}
                                 smooth={true}
                                 offset={0}

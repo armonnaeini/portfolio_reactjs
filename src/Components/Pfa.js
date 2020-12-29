@@ -17,7 +17,7 @@ class Pfa extends Component {
                             <h1 className = "project-header">putphoneaway</h1>
                             <h2 className = "project-sub-header">UX Design, Web Development, Shopify</h2>
                             <p className = "project-blurb">
-                                putphoneaway is a sticker company that seeks to raise awareness regarding the dangers
+                                putphoneaway is a sticker company that strives to raise awareness regarding the dangers
                                 of texting and driving. I redesigned and developed their Shopify website, using custom
                                 Liquid code.
                             </p>

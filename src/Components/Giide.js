@@ -18,7 +18,7 @@ class Giide extends Component {
                             <h2 className = "project-sub-header">UX Design, Web Development, Graphic Design, Marketing,
                             Social Media</h2>
                             <p className = "project-blurb">
-                                A selection of my UX projects during my time working as a UX designer and devloper at mobile app startup,
+                                A selection of my UX projects during my time working as a UX designer and developer at mobile app startup,
                                 Giide. My duties involved user experience design and development, for both web and mobile,
                                 graphic design for social media, as well as Alexa Skill and AR prototyping.
                             </p>

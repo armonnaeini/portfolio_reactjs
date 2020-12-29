@@ -4,11 +4,14 @@ $primary-col: #fff;
 $secondary-col: #EA2B1F;
 
 html{
-  
+
 
   body{
     font-family: neue-haas-grotesk-display, sans-serif;
     margin: 0;
+    overflow-x: hidden;
+    overflow-x: hidden !important;
+
 
     .ReactModal__Body--open {
       overflow: hidden;
@@ -78,7 +81,31 @@ html{
 
             .link-container {
               margin-bottom: 15px;
+              cursor: pointer;
             }
+
+            .link-container-about-nonmobile {
+              margin-bottom: 15px;
+              cursor: pointer;
+
+              @media screen and (max-width: 800px) {
+                display: none;
+              }
+            }
+            .link-container-about-mobile {
+              display: none;
+              margin-bottom: 15px;
+              cursor: pointer;
+
+
+              @media screen and (max-width: 800px) {
+                display: block;
+                cursor: pointer;
+
+              }
+            }
+
+            
 
             .active {
               color: black;
@@ -89,6 +116,10 @@ html{
           .nav-bar {
             display: none !important;
           }
+
+          .nav-bar-mobile {
+            display: none !important;
+          }
         }
       }
 
@@ -96,24 +127,24 @@ html{
         display: none;
 
         @media screen and (max-width: 700px) {
-          display: flex;
-        background-color: rgba(156, 13, 13, 0);
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-around;
-        width: 100%;
-        height: 100%;
-        -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-        writing-mode: vertical-lr;
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        position: fixed;
-        padding-right: 25px;
-        width: 10%;
-        cursor: pointer;
+            display: flex;
+            background-color: rgba(156, 13, 13, 0);
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            position: fixed;
+            padding-right: 25px;
+            width: 10%;
+            cursor: pointer;
         }
       }
       .nav-bar {
@@ -155,18 +186,38 @@ html{
     
     .home-wrapper{
       
-      overflow-x: hidden;
+      overflow-x: hidden !important;
+
+      .mobile-cc {
+        display: none;
+        overflow-x: hidden !important;
+
+        @media screen and (max-width: 700px) {
+          overflow-x: hidden !important;
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -10000;
+        }
+      }
 
       .home-section {
         height: 100vh;
-        width: 83%;
+        width: 80%;
         display: flex;
         margin: 0 auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
-        @media sreen and (max-width: 900px) {
-          flex-direction: column;
-          width: 80%;
+        @media screen and (max-width: 700px) {
+          flex-direction: column !important;
+          width: 90%;
+          overflow-x: hidden;
+          
         }
+
+        
         
         .cc {
           width: 100%;
@@ -175,20 +226,11 @@ html{
           // flex-direction: column;
           // align-items: center;
           // justify-content: center;
+          margin-right: -50px;
           z-index: -1000;
-
-          #canvas {
-            margin-top: 10%;
-            padding-left: 110px;
-            // margin: 0 auto;
-
-            @media screen and (max-width: 900px) {
-              width: 100% !important;
-              height: 100% !important;
-              padding-left: 0px;
-              padding-right: 500px;
-              margin-left: -180px;
-            }
+          // overflow-x: hidden;
+          @media screen and (max-width: 700px) {
+            display: none;
           }
         }
         
@@ -202,11 +244,17 @@ html{
             color: #232020;
             white-space: nowrap;
 
+            @media screen and (max-width: 700px) {
+              white-space: normal;
+              width: 100%;
+            }
+
             h1 {
               margin-bottom: 20px;
               max-width: 700px;
               line-break: none;
-              word-wrap: normal;
+       
+              
             }
 
             h3 {
@@ -222,13 +270,17 @@ html{
         content: "";
         border-bottom: 3.4px solid black;
         z-index: 10;
-        width: 83%;
+        width: 80%;
         // top: 86%;
         height: 94%;
         position: absolute;
-        z-index: -100;
+        z-index: 10000000;
         @media screen and (min-height: 1700px) {
           height: 98%;
+        }
+
+        @media screen and (max-width: 700px) {
+          display: none;
         }
       }
     }
@@ -255,7 +307,7 @@ html{
     .about-section {
       z-index: -100 !important;
       height: 100vh;
-      width: 83%;
+      width: 80%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -337,7 +389,7 @@ html{
       }
 
       .work-wrapper{
-        width: 83%;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         height: 100%;
@@ -436,7 +488,7 @@ html{
     /** CONTACT CONTAINER **/
     .contact-section {
       height: 100vh;
-      max-width: 83%;
+      max-width: 80%;
       margin: 0 auto;
       z-index: 1000000;
 
@@ -467,7 +519,7 @@ html{
     .project-section {
       width: 100%;
       height: 100vh;
-      max-width: 84%;
+      max-width: 80%;
       margin: 0 auto;
       
       .return-container {

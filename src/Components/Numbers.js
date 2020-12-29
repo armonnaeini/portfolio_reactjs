@@ -19,13 +19,13 @@ class Numbers extends Component {
                             <p className = "project-blurb">
                                 Arbitrary Numbers is a fashion brand I started up in April of 2020. Right at the beginning of
                                 Covid-19 and quarantine, I found some extra time on my hands. I decided to make a dream of mine
-                                a reality; I've always wanted create my own clothing brand, given my extreme interest in fashion design.
+                                a reality; I've always wanted to create my own clothing brand, given my extreme interest in fashion design.
                                 <br></br>
                                 <br></br>
-                                The philosphy behind Arbitrary Numbers revolves around combing art and design with code, three
+                                The philosophy behind Arbitrary Numbers revolves around combining art and design with code, three
                                 things I am extremely passionate about. I fell in love with creative coding/computation during 
                                 my undergrad career at CU Boulder, where I started to create art using various programming 
-                                langueges and softwares, such as Javscript or GLSL. I then thought to myself why I do not use
+                                languages and software, such as Javscript or GLSL. I then thought to myself why I do not use
                                 this practice to design clothes. Arbitrary Numbers' designs are all made/inspired with code,
                                 ranging from JS to C++. The site was also custom developed by myself using Shopify and Three.js.
                                 <br></br>

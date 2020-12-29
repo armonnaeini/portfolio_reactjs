@@ -19,9 +19,9 @@ class Sher extends Component {
                             <p className = "project-blurb">
                                 A website I recently fully redesigned and developed, while I was working at Vermilion Design + Digital.
                                 Sher Edling LLP is a law firm representing states, cities, public agencies
-                                and businesses in high-impact environmental cases. They approached Vermilion with a desire to completely
-                                revamp their website experience, in terms of both UX and design. I led the project and transformed 
-                                their old, non-intuitive website into a much more digestible web experience.
+                                and businesses in high-impact environmental cases. Sher Edling approached Vermilion with a request to completely
+                                revamp their web experience, regarding both UX and UI design. I led the project and transformed 
+                                their old, non-intuitive website into a more digestible web experience.
                             </p>
                             <span className = "site-link"><a href="https://www.fuegoux.com/" target="_blank">Visit site</a></span>
 

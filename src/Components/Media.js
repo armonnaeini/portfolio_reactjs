@@ -18,11 +18,11 @@ class Media extends Component {
                             <h1 className = "project-header">New Media Art</h1>
                             <h2 className = "project-sub-header">TouchDesigner, GLSL, Python, openFrameworks</h2>
                             <p className = "project-blurb">
-                                For the past year and a half, I have been training myself in TouchDesigner. I initially started
-                                my creative coding endeavors in p5.js and Processing, then moved onto openFrameworks. After discovering
-                                TouchDesigner, I instantly fell in love and have been obsessed with the software since. I strive to 
-                                produce surreal, evoking visuals, for music videos, projections, or simply for lesiure viewing on web/mobile.
-                                The projects listed are a comobination of my works in TouchDesigner and openFrameworks.
+                                For the past year and a half, I have been teaching myself TouchDesigner, GLSL, and openFrameworks. I initially
+                                began my creative coding endeavors with Processing and Arduino, but after discovering more robust toolkits such
+                                as TouchDesigner, I instantly fell in love. Currently, I'm working towards becoming adept in TouchDesigner in efforts
+                                to produce emotionally evoking and beautiful, real-time experiences.
+                        
                             </p>
                         </div>
                     </div>
