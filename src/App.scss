@@ -5,17 +5,9 @@ $secondary-col: #EA2B1F;
 
 html{
 
-
-  body{
+  body {
     font-family: neue-haas-grotesk-display, sans-serif;
     margin: 0;
-    overflow-x: hidden;
-    overflow-x: hidden !important;
-
-
-    .ReactModal__Body--open {
-      overflow: hidden;
-    }
   }
 
   .App{
@@ -58,7 +50,6 @@ html{
       font-weight: 600;
     }
   
-    
     .nav-wrapper {
       width: 50px;
       height: 100%;
@@ -92,20 +83,17 @@ html{
                 display: none;
               }
             }
+
             .link-container-about-mobile {
               display: none;
               margin-bottom: 15px;
               cursor: pointer;
 
-
               @media screen and (max-width: 800px) {
                 display: block;
                 cursor: pointer;
-
               }
             }
-
-            
 
             .active {
               color: black;
@@ -151,8 +139,8 @@ html{
         .link-container {
           cursor: pointer;
         }
+        
         z-index: 10;
-
         display: flex;
         background-color: rgba(0,0,0,0);
         flex-direction: row;
@@ -169,6 +157,7 @@ html{
         transform-origin: center center;
         position: fixed;
         padding-right: 25px;
+
         .active {
           font-weight: 900;
           color: rgb(31, 29, 29);
@@ -177,15 +166,11 @@ html{
         @media screen and (max-width: 700px) {
           display: none;
         }
-
       }
-
-      
     }
     
     
     .home-wrapper{
-      
       overflow-x: hidden !important;
 
       .mobile-cc {
@@ -214,21 +199,14 @@ html{
           flex-direction: column !important;
           width: 90%;
           overflow-x: hidden;
-          
         }
 
-        
-        
         .cc {
           width: 100%;
           height: 100%;
-          // display: flex;
-          // flex-direction: column;
-          // align-items: center;
-          // justify-content: center;
           margin-right: -50px;
           z-index: -1000;
-          // overflow-x: hidden;
+          
           @media screen and (max-width: 700px) {
             display: none;
           }
@@ -579,7 +557,8 @@ html{
         width: 100%;
         height: 100%;
         display: flex;
-
+        overflow-y: hidden;
+        
         @media screen and (max-width: 1000px) {
           flex-direction: column;
         }
@@ -633,15 +612,35 @@ html{
           height: 100vh;
           font-size: 50px;
           overflow: auto;
-          margin-top: 50px;
-
+          position: relative;
           @media screen and (max-width: 1000px) {
             width: 100%;
             height: 100% !important;
             margin-top: -50px;
           }
+
+          .scroll-container {
+            position: relative;
+            z-index: 10000;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: -50px;
+            
+            span {
+              margin: 0 auto;
+              text-align: center;
+              font-size: 15px;
+            }
+          }
           
           .video-container{
+            padding-top: 56.25%;
+            position: relative;
+            margin-bottom: 10px;
+          }
+          .video-container2{
             padding-top: 56.25%;
             position: relative;
             margin-bottom: 70px;
@@ -650,19 +649,45 @@ html{
           .video-container-media{
             padding-top: 56.25%;
             position: relative;
-            margin-bottom: 0px;
+            margin-bottom: 30px;
           }
 
-          .video-container-filter{
-            padding-top: 92.25%;
+          .video-container-media2{
+            padding-top: 56.25%;
             position: relative;
-            margin-bottom: 70px;
+            margin-bottom: 10px;
+          }
+
+          .video-container-media3{
+            padding-top: 50.25%;
+            position: relative;
+            margin-bottom: 180px;
+          }
+          
+
+          .video-container-filter{
+            padding-top: 95.25%;
+            position: relative;
+            margin-bottom: 90px;
+          }
+
+          .video-container-filter2{
+            padding-top: 95.25%;
+            position: relative;
+            margin-bottom: 200px;
           }
 
           .video-container-art {
             padding-top: 86.25%;
             position: relative;
-            margin-bottom: 70px;
+            margin-bottom: 90px;
+          }
+
+          .video-container-art2 {
+            padding-top: 90%;
+            position: relative;
+            margin-bottom: 120px;
+            margin-top: 0px;
           }
 
           .video-container-filter:last-child {
@@ -681,6 +706,18 @@ html{
             margin: 0 auto;
             width: 90%;
             margin-top: 50px;
+            margin-bottom: 50px;
+
+            .responsive-image {
+              max-width: 100%;
+              margin: 0 auto !important;
+            }
+          }
+
+          .img-container-1 {
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 70px;
             margin-bottom: 50px;
 
             .responsive-image {

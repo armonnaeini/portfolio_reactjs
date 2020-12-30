@@ -19,13 +19,16 @@ class Mosh extends Component {
                             <h2 className = "project-sub-header">Illustrator</h2>
                             <p className = "project-blurb">
                                 In my free time, I enjoy exploring graphic design, particularly typography. 
-                                Here are a few designs that I'm particularly proud of.
+                                Here are a few designs that I'm proud of.
                             </p>
                         </div>
                     </div>
                   
                     <div className = "project-image-container">
-                        <div className = "img-container">
+                    <div className="scroll-container">
+                            <span>Scroll for more</span>
+                        </div>
+                        <div className = "img-container-1">
                             <img src ="https://i.imgur.com/89olGyR.png" href="img1" className = "responsive-image"/>
                         </div>
                         <div className = "img-container">

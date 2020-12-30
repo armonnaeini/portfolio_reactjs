@@ -3,13 +3,24 @@ import ReactPlayer from 'react-player';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
+function myFunction() {
+
+var elmnt = document.getElementById("project-infow-wrapper");
+var elmnt2 = document.getElementById("project-image-container");
+
+elmnt2.scroll = elmnt.scroll;
+
+}
+
 class Body extends Component {
-    state = {};
+   
+
     render() {
         return(
+
             <div className = "project-section">
               <div className = "project-wrapper">
-          
+
                     <div className = "project-info-wrapper">
                         <Link to ="/">
                             <div className = "return-container">
@@ -32,6 +43,9 @@ class Body extends Component {
                     </div>
                   
                     <div className = "project-image-container">
+                    <div className="scroll-container">
+                            <span>Scroll me for more</span>
+                        </div>
                         <div className = "video-container">
                             <ReactPlayer
                                 id = "react-player"
@@ -45,7 +59,7 @@ class Body extends Component {
                                 muted
                             />
                         </div>
-                        <div className = "video-container">
+                        <div className = "video-container2">
                             <ReactPlayer
                                 id = "react-player"
                                 playsInline

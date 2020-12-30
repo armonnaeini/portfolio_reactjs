@@ -26,7 +26,10 @@ class Giide extends Component {
                     </div>
                   
                     <div className = "project-image-container">
-                        <div className = "img-container">
+                    <div className="scroll-container">
+                            <span>Scroll for more</span>
+                        </div>
+                        <div className = "img-container-1">
                             <img src ="https://i.imgur.com/1AC3W43.png" href="img1" className = "responsive-image"/>
                         </div>
                         <div className = "img-container">

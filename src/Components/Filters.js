@@ -26,6 +26,9 @@ class Filters extends Component {
                     </div>
                   
                     <div className = "project-image-container">
+                    <div className="scroll-container">
+                            <span>Scroll for more</span>
+                        </div>
                         <div className = "video-container-filter">
                             <ReactPlayer
                                 id = "react-player"
@@ -40,13 +43,12 @@ class Filters extends Component {
                             />
                         </div>
 
-                        <div className = "video-container-filter">
+                        <div className = "video-container-filter2">
                             <ReactPlayer
                                 id = "react-player"
                                 playsInline
                                 className='react-player'
                                 url='https://player.vimeo.com/video/493095689'
-                                playing
                                 controls="true"
                                 width= "100%"
                                 height="100%"

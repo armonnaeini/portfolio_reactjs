@@ -3,8 +3,10 @@ import ReactPlayer from 'react-player';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class Media extends Component {
-    state = {};
-    render() {
+    state = {
+        opacity: '1'
+    }
+        render() {
         return(
             <div className = "project-section">
               <div className = "project-wrapper">
@@ -28,6 +30,11 @@ class Media extends Component {
                     </div>
                   
                     <div className = "project-image-container">
+                        <div className="scroll-container">
+                            <span>Scroll for more</span>
+                        </div>
+                    
+
                         <div className = "video-container-media">
                             <ReactPlayer
                                 id = "react-player"
@@ -42,7 +49,7 @@ class Media extends Component {
                             />
                         </div>
 
-                        <div className = "video-container-media">
+                        <div className = "video-container-media2">
                             <ReactPlayer
                                 id = "react-player"
                                 playsInline
@@ -74,7 +81,7 @@ class Media extends Component {
                                 id = "react-player"
                                 playsInline
                                 className='react-player'
-                                url='https://player.vimeo.com/video/492922076'
+                                url='https://player.vimeo.com/video/495610503'
                                 
                                 controls="true"
                                 width= "100%"
@@ -88,6 +95,20 @@ class Media extends Component {
                                 id = "react-player"
                                 playsInline
                                 className='react-player'
+                                url='https://player.vimeo.com/video/492922076'
+                                
+                                controls="true"
+                                width= "100%"
+                                height="100%"
+                                muted
+                            />
+                        </div>
+
+                        <div className = "video-container-art2">
+                            <ReactPlayer
+                                id = "react-player"
+                                playsInline
+                                className='react-player'
                                 url='https://player.vimeo.com/video/492923920'
                                 
                                 controls="true"
@@ -97,7 +118,7 @@ class Media extends Component {
                             />
                         </div>
 
-                        <div className = "video-container">
+                        <div className = "video-container-media3">
                             <ReactPlayer
                                 id = "react-player"
                                 playsInline
