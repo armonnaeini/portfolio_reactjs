@@ -32,12 +32,12 @@ class Body extends Component {
                             <h2 className = "project-sub-header">C++, OpenGL, openFrameworks, UX, Interactive Installations</h2>
                             <p className = "project-blurb">
                                 Body is an interactive, motion tracking installation I developed using openFrameworks,
-                                a C++ creative toolkit. The project utilizes an Xbox 360’s Kinect V1 camera and its IR technology
-                                for motion tracking. Body tracks a viewer's movement, within the space of the installation, and 
-                                displays and trails the user's silhouttte back to the themself in a colorful render.
+                                a C++ creative toolkit.
+                                Body tracks a viewer's movement, using an Xbox 360's Kinect camera, within the space of the installation.
+                                As a viewer moves around, their silhouttte is trailed and colorfully displayed back to the themself.
                                 <br></br><br></br>Body was comissioned as an interactive installation
                                 for the University of Colorado Boulder’s Open Access Week, as well as Wonder Wonder Boulder, an 
-                                experiential arts museum. Definitely the coolest project I've worked on yet.
+                                experiential arts museum. <br></br><br></br>Definitely the work I'm most proud of.
                             </p>
                         </div>
                     </div>
@@ -53,19 +53,6 @@ class Body extends Component {
                                 className='react-player'
                                 url='https://player.vimeo.com/video/385177276'
                                 playing
-                                controls="true"
-                                width= "90%"
-                                height="90%"
-                                muted
-                            />
-                        </div>
-                        <div className = "video-container2">
-                            <ReactPlayer
-                                id = "react-player"
-                                playsInline
-                                className='react-player'
-                                url='https://player.vimeo.com/video/380535086'
-                                
                                 controls="true"
                                 width= "90%"
                                 height="90%"

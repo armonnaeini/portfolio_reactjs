@@ -15,7 +15,7 @@ import Mosh from './Components/Mosh';
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as HashRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -24,8 +24,13 @@ function App() {
  
 
   return (
-    <Router>
+<HashRouter
+
+  hashType="noslash"
+>
+
        <div className="App" >
+     
         <Switch>
           <Route exact path="/" component={ MainHome }/>
 
@@ -44,7 +49,7 @@ function App() {
 
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
    
   
   );

@@ -19,7 +19,7 @@ class Giide extends Component {
                             Social Media</h2>
                             <p className = "project-blurb">
                                 A selection of my UX projects during my time working as a UX designer and developer at mobile app startup,
-                                Giide. My duties involved user experience design and development, for both web and mobile,
+                                Giide. My duties involved user experience design and development for web and mobile,
                                 graphic design for social media, as well as Alexa Skill and AR prototyping.
                             </p>
                         </div>

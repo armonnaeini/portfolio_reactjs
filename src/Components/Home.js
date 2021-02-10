@@ -202,9 +202,9 @@ class Home extends Component {
                             <div className = "blurb-p">
                                 <p>
 
-                                    I am a creative technologist and multimedia producer. I strive to combine computer science with art + design
+                                I am a creative technologist and multimedia producer. I strive to combine computer science with art + design
                                     to produce experiences, solutions and artistic expressions across a variety of media. Self-expression
-                                    is an extremely important concept to me, and I've learned to manifest the trait into the work that I design
+                                    is an extremely important concept to me, and I've learned to manifest my feelings and emotions into the work that I design
                                     and develop.
                                     
                                 </p>
@@ -227,11 +227,12 @@ class Home extends Component {
                             <h1>What I know</h1>
                                 <div className = "blurb-p">
                                     <p><span>Design*</span><br></br>
-                                        Full Adobe Creative Suite, Sketch, Figma, InVision, Blender, Avidemux;), SparkAR
+                                        Full Adobe Creative Suite, Sketch, Figma, InVision, Blender, Avidemux ;), SparkAR
                                         <br></br><br></br>
                                         <span>Development {">"}_</span>
                                         <br></br>
-                                        HTML, CSS, JS, ReactJS (I built this site with React), Three.js, C++, openFrameworks, 
+                                        HTML, CSS, JS, ReactJS (I developed this site with React), Three.js, Node.js,
+                                        Git, C++, openFrameworks, 
                                         OpenGL, GLSL, TouchDesigner, Python, Arduino, Processing
                                     </p>
                                 </div>
@@ -258,10 +259,10 @@ class Home extends Component {
                                 <p>
                                     I am a creative technologist and multimedia producer. I strive to combine computer science with art + design
                                     to produce experiences, solutions and artistic expressions across a variety of media. Self-expression
-                                    is an extremely important concept to me, and I've learned to manifest the trait into the work that I design
+                                    is an extremely important concept to me, and I've learned to manifest my feelings and emotions into the work that I design
                                     and develop.<br></br>
                                     <div>
-                                        <a href = "https://vimeo.com/385177276">Learn a little bit more about me.</a>
+                                        <a href = "https://vimeo.com/385177276" id = "learn">Learn a little bit more about me.</a>
                                     </div>
                                 </p>
                             </div>
@@ -278,11 +279,11 @@ class Home extends Component {
                             </div>
                             <div className = "blurb-p">
                                 <p><span>Design*</span><br></br>
-                                    Full Adobe Creative Suite, Sketch, Figma, InVision, Blender, Avidemux;), SparkAR
+                                    Full Adobe Creative Suite, Sketch, Figma, InVision, Blender, Avidemux ;), SparkAR
                                     <br></br><br></br>
                                     <span>Development {">"}_</span>
                                     <br></br>
-                                    HTML, CSS, JS, ReactJS (I built this site with React), Three.js, C++, openFrameworks, 
+                                    HTML, CSS, JS, ReactJS (I developed this site with React), Three.js, Node.js, Git, C++, openFrameworks, 
                                     OpenGL, GLSL, TouchDesigner, Python, Arduino, Processing
                                 </p>
                             </div>
@@ -375,6 +376,9 @@ class Home extends Component {
                 <div className = "contact-container">
                     <a href="mailto:work@armonnn.com">
                         <h1 >EMAIL</h1>
+                    </a>
+                    <a href="https://github.com/armonnaeini" target="_blank">
+                        <h1 >GITHUB</h1>
                     </a>
                     <a href = "https://www.linkedin.com/in/armonnaeini/" target="_blank">
                         <h1>LINKEDIN</h1>

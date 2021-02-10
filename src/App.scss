@@ -236,7 +236,7 @@ html{
             }
 
             h3 {
-              font-size: 14px;
+              font-size: 16px;
               margin-bottom: 5.8rem;
             }
           }
@@ -340,11 +340,12 @@ html{
                 padding-top: 10px;
                 color:rgb(31, 29, 29);
                 font-weight: 600;
+                text-decoration: underline;
               }
             }
            
             p {
-              font-size: 15px;
+              font-size: 16px;
               font-weight: 500;
             }
             
@@ -475,11 +476,12 @@ html{
       }
 
       .contact-container {
-        padding-top: 100px;
+        padding-top: 60px;
         z-index: 1000000;
+        padding-bottom: 100px;
         a {
           h1 {
-            font-size: 11vh;
+            font-size: 10.5vh;
             color:rgb(31, 29, 29);
             text-decoration: none;
             @media screen and (max-width: 700px) {
@@ -593,7 +595,7 @@ html{
             }
             
             p {
-              font-size: 14px;
+              font-size: 16px;
               margin-top: 50px;
             }
 
@@ -662,6 +664,13 @@ html{
             padding-top: 50.25%;
             position: relative;
             margin-bottom: 180px;
+          }
+
+          .video-container-media4{
+            padding-top: 50.25%;
+            position: relative;
+            margin-bottom: 180px;
+            margin-top: -102px;
           }
           
 

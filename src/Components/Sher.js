@@ -17,13 +17,13 @@ class Sher extends Component {
                             <h1 className = "project-header">Sher Edling LLP</h1>
                             <h2 className = "project-sub-header">UX Discovery, UX Design, Web Development</h2>
                             <p className = "project-blurb">
-                                A website I recently fully redesigned and developed, while I was working at Vermilion Design + Digital.
+                                A website I recently redesigned and developed, while I was working at Vermilion Design + Digital.
                                 Sher Edling LLP is a law firm representing states, cities, public agencies
                                 and businesses in high-impact environmental cases. Sher Edling approached Vermilion with a request to completely
                                 revamp their web experience, regarding both UX and UI design. I led the project and transformed 
                                 their old, non-intuitive website into a more digestible web experience.
                             </p>
-                            <span className = "site-link"><a href="https://www.fuegoux.com/" target="_blank">Visit site</a></span>
+                            <span className = "site-link"><a href="https://www.sheredling.com/" target="_blank">Visit site</a></span>
 
                         </div>
                     </div>

@@ -22,12 +22,19 @@ class Numbers extends Component {
                                 a reality; I've always wanted to create my own clothing brand, given my extreme interest in fashion design.
                                 <br></br>
                                 <br></br>
-                                The philosophy behind Arbitrary Numbers revolves around combining art and design with code, three
-                                things I am extremely passionate about. I fell in love with creative coding/computation during 
-                                my undergrad career at CU Boulder, where I started to create art using various programming 
-                                languages and software, such as Javscript or GLSL. I then thought to myself why I do not use
-                                this practice to design clothes. Arbitrary Numbers' designs are all made/inspired with code,
-                                ranging from JS to C++. The site was also custom developed by myself using Shopify and Three.js.
+                                The philosophy behind Arbitrary Numbers revolves around meshing art and design with code, three
+                                things I am extremely passionate about. I fell in love with creative coding/computation during
+                                my undergrad career at CU Boulder, where I started to create art using various programming languages
+                                and software, such as Javascript, TouchDesigner, or GLSL. I then thought to myself why I do not use
+                                implement my practice into clothing design, given my interests. Arbitrary Numbers' designs are all
+                                made/inspired with code, ranging from JS to C++. The site was also custom developed by myself using
+                                Shopify and Three.js.
+                                <br></br>
+                                <br></br>
+                                The three shirts showcased on this page were all designed using Javascript or visualizing JSON data. 
+                                The first and last tee were designed with the JavaScript libraries Blotter.js and Three.js. The middle 
+                                shirt, ‘Backbone Tee’, illustrates JSON data representing the ‘Helvetica’ typeface used for Arbitrary 
+                                Numbers’ homepage 3D animation. 
                                 <br></br>
                                 <br></br>
                                 The project is small and very young, but it means the world to me. I hope to take this to the moon
@@ -46,7 +53,7 @@ class Numbers extends Component {
                         </div>
 
                         <div className = "img-container">
-                            <img src ="https://i.imgur.com/sGZ5h9i.png" href="img1" className = "responsive-image"/>
+                            <img src ="https://i.imgur.com/3a7e1pk.png" href="img1" className = "responsive-image"/>
                         </div>  
 
                         <div className = "img-container">

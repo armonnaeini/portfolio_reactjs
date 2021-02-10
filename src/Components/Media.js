@@ -20,10 +20,12 @@ class Media extends Component {
                             <h1 className = "project-header">New Media Art</h1>
                             <h2 className = "project-sub-header">TouchDesigner, GLSL, Python, openFrameworks</h2>
                             <p className = "project-blurb">
-                                For the past year and a half, I have been teaching myself TouchDesigner, GLSL, and openFrameworks. I initially
-                                began my creative coding endeavors with Processing and Arduino, but after discovering more robust toolkits such
-                                as TouchDesigner, I instantly fell in love. Currently, I'm working towards becoming adept in TouchDesigner in efforts
+                                A selection of projects/visuals I have produced with either TouchDesigner, GLSL, openFrameworks, or with
+                                Avidemux. Currently, I'm working towards becoming adept in TouchDesigner in efforts
                                 to produce emotionally evoking and beautiful, real-time experiences.
+                                <br></br>
+                                <br></br>
+                                More information regarding a specific visual can be found on the Vimeo link.
                         
                             </p>
                         </div>
@@ -58,6 +60,20 @@ class Media extends Component {
                                 controls="true"
                                 width= "89%"
                                 height="89%"
+                                muted
+                            />
+                        </div>
+
+                        <div className = "video-container-art">
+                            <ReactPlayer
+                                id = "react-player"
+                                playsInline
+                                className='react-player'
+                                url='https://player.vimeo.com/video/502245691'
+                                
+                                controls="true"
+                                width= "100%"
+                                height="100%"
                                 muted
                             />
                         </div>
@@ -124,6 +140,20 @@ class Media extends Component {
                                 playsInline
                                 className='react-player'
                                 url='https://player.vimeo.com/video/331350332'
+                                
+                                controls="true"
+                                width= "100%"
+                                height="100%"
+                                muted
+                            />
+                        </div>
+
+                        <div className = "video-container-media4">
+                            <ReactPlayer
+                                id = "react-player"
+                                playsInline
+                                className='react-player'
+                                url='https://player.vimeo.com/video/495325909'
                                 
                                 controls="true"
                                 width= "100%"
